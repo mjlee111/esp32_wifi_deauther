@@ -20,43 +20,49 @@ bool Display::startDisplay() {
   return true;
 }
 
-void Display::setDisplayText(const char *text, int16_t x, int16_t y,
+void Display::setDisplayText(std::string text, int16_t x, int16_t y,
                              float size) {
+  if (text.length() > 21) {
+    text = text.substr(0, 21);
+  }
   display.clearDisplay();
   display.setTextColor(WHITE);
   display.setTextSize(size);
   display.setCursor(x * 6, y * 8);
-  display.println(text);
+  display.println(text.c_str());
   display.display();
 }
 
-void Display::setDisplayText(std::string text, int16_t x, int16_t y,
+void Display::setDisplayText(const char *text, int16_t x, int16_t y,
                              float size) {
-  setDisplayText(text.c_str(), x, y, size);
+  std::string str = text;
+  setDisplayText(str, x, y, size);
 }
 
 void Display::setDisplayText(int text, int16_t x, int16_t y, float size) {
   std::string str = std::to_string(text);
-  const char *cstr = str.c_str();
-  setDisplayText(cstr, x, y, size);
-}
-
-void Display::appendDisplayText(const char *text, int16_t x, int16_t y,
-                                float size) {
-  display.setTextColor(WHITE);
-  display.setTextSize(size);
-  display.setCursor(x * 6, y * 8);
-  display.println(text);
-  display.display();
+  setDisplayText(str, x, y, size);
 }
 
 void Display::appendDisplayText(std::string text, int16_t x, int16_t y,
                                 float size) {
-  appendDisplayText(text.c_str(), x, y, size);
+  if (text.length() > 21) {
+    text = text.substr(0, 21);
+  }
+  display.setTextColor(WHITE);
+  display.setTextSize(size);
+  display.setCursor(x * 6, y * 8);
+  display.println(text.c_str());
+  display.display();
+}
+
+void Display::appendDisplayText(const char *text, int16_t x, int16_t y,
+                                float size) {
+  std::string str = text;
+  appendDisplayText(str, x, y, size);
 }
 
 void Display::appendDisplayText(int text, int16_t x, int16_t y, float size) {
   std::string str = std::to_string(text);
-  const char *cstr = str.c_str();
-  appendDisplayText(cstr, x, y, size);
+  appendDisplayText(str, x, y, size);
 }
