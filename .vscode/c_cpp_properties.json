@@ -1,0 +1,25 @@
+{
+    "configurations": [
+      {
+        "name": "ESP32-C3",
+        "includePath": [
+          "${workspaceFolder}/**",
+          "C:/Users/user/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.0.3/**",
+          "C:/Users/user/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.0.3/libraries/**",
+          "C:/Users/user/Documents/Arduino/libraries/**"
+        ],
+        "forcedInclude": [],
+        "defines": [
+          "ESP32",
+          "CORE_DEBUG_LEVEL=0",
+          "CONFIG_IDF_TARGET_ESP32C3"
+        ],
+        "intelliSenseMode": "gcc-x64",
+        "cStandard": "c11",
+        "cppStandard": "c++11"
+        // "compilerPath": "C:/Users/user/AppData/Local/Arduino15/packages/esp32/tools/riscv32-esp-elf-gcc/esp-2021r2-patch3/bin/riscv32-esp-elf-gcc.exe"
+      }
+    ],
+    "version": 4
+  }
+  
