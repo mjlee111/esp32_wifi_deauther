@@ -1,6 +1,7 @@
 # ESP32 wifi deauther with mini display
 
 <img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/logo.png" alt="logo" width="200" height="200">
+<img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/v1.jpg" alt="v1" height="200">
 
 ## Overview
 `esp32_wifi_deauther` is a custom firmware for the `ESP32` board that enables WiFi scanning, deauthentication attacks, and includes support for a 0.96-inch OLED display. The firmware is designed to leverage the powerful capabilities of the ESP32, making it a versatile tool for network analysis and testing. Schematics & PCB data is provided for the test.
@@ -75,6 +76,8 @@ You can download `schematic` & `gerber` files in [here][circuit-download]
 ### Hardware Requirements 💻
 
 - **ESP32 Board:** A low-cost, low-power microcontroller with built-in WiFi and Bluetooth capabilities. (In this project, I used [ESP32 C3 Super Mini][esp32-super-mini] )
+<img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/esp32_c3_super_mini.jpg" alt="esp32_super_mini">
+
 - **0.96-inch OLED Display:** A small, monochrome display module that provides visual output of network data and actions.
 - **Additional Components:** Basic electronic components like resistors and wires for connecting the OLED display to the ESP32.
 
