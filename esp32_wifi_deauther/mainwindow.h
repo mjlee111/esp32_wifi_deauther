@@ -31,9 +31,28 @@ public:
   void init();
   void loop();
 
+  void handleBack();
+
+  void handleMainPage(int button);
   void setMainPage();
   void handleMainPageUp();
   void handleMainPageDown();
+  void handleMainPageSel();
+  void handleMainPageBack();
+
+  void handleScanPage(int button);
+  void setScanPage();
+  void handleScanPageUp();
+  void handleScanPageDown();
+  void handleScanPageSel();
+  void handleScanPageBack();
+  void showWifiInfo(int num);
+
+  void setSelectPage();
+
+  void setAttackPage();
+
+  void setInfoPage();
 
 private:
   Display *display_;
@@ -42,6 +61,7 @@ private:
 
   int cursor_index = 0;
   int page = 0; // 0 : Main, 1 : Scan, 2 : Select, 3 : Attack, 4 : Info
+  bool on_page = false;
 };
 
 #endif
