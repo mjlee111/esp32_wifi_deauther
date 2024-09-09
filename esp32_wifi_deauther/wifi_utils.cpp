@@ -1,5 +1,5 @@
-// WiFi_Utils.cpp
-#include "WiFi_Utils.h"
+// wifi_utils.cpp
+#include "wifi_utils.h"
 
 WiFi_Utils::WiFi_Utils(bool random_mac) : random_mac_enable(random_mac)
 {
@@ -58,7 +58,7 @@ wifiData WiFi_Utils::scanWifiList()
     {
       wifi_.ssid.push_back(std::string(WiFi.SSID(i).c_str()));
       wifi_.bssid.push_back(std::string(WiFi.BSSIDstr(i).c_str()));
-      wifi_.chanel.push_back(WiFi.channel(i));
+      wifi_.channel.push_back(WiFi.channel(i));
       wifi_.signal.push_back(WiFi.RSSI(i));
     }
     return wifi_;

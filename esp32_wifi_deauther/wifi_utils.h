@@ -3,7 +3,6 @@
 #define WIFI_UTILS_H
 
 #include <WiFi.h>
-#include <WiFiUdp.h>
 #include <esp_wifi.h>
 #include <string>
 #include <vector>
@@ -13,7 +12,7 @@ struct wifiData
   int num;
   std::vector<std::string> ssid;
   std::vector<std::string> bssid;
-  std::vector<uint32_t> chanel;
+  std::vector<uint32_t> channel;
   std::vector<float> signal;
 };
 
