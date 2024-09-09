@@ -14,7 +14,7 @@
 - [Prerequisites & Setup](#prerequisites--setup)
 - [Installation](#installation)
 - [How To Use](#how-to-use)
-- [ESP32 wifi deauther PCB V3.0](#esp2-wifi-deauther-pcb-v30)
+- [ESP32 wifi deauther PCB V3.0](#esp32-wifi-deauther-pcb-v30)
 - [About This Project](#about-this-project)
 - [etc](#contributing)
 
@@ -46,14 +46,19 @@
 
 ## How To Use
 
-## ESP2 wifi deauther PCB V3.0
+## ESP32 wifi deauther PCB V3.0
 ### Downloads
 You can download `schematic` & `gerber` files in [here][circuit-download]
 
 ### Schematic Preview
-<img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/schematic.png" alt="schematic">
+<img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/PCB/schematic.png" alt="schematic">
 
 ### PCB Preview
+- 2D
+
+<img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/PCB/pcb_2d.png" alt="pcb_2d">
+
+- 3D
 
 ## About This Project
 ### Key Features 🔑
