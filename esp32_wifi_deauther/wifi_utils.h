@@ -32,9 +32,9 @@ public:
                                     int timeout_ms);
 
   std::string macAddress();
+  wifiData wifi_list;
 
 private:
-  wifiData wifi_list;
   std::string mac_address;
 
   bool random_mac_enable = false;
