@@ -23,7 +23,8 @@
 #include "wifi_utils.h"
 #include <string>
 
-class Mainwindow {
+class Mainwindow
+{
 public:
   Mainwindow();
   ~Mainwindow();
@@ -55,12 +56,12 @@ public:
   void setInfoPage();
 
 private:
-  Display *display_;
-  WiFi_Utils *w_utils_;
-  Buttons *buttons_;
+  Display* display_;
+  WiFi_Utils* w_utils_;
+  Buttons* buttons_;
 
   int cursor_index = 0;
-  int page = 0; // 0 : Main, 1 : Scan, 2 : Select, 3 : Attack, 4 : Info
+  int page = 0;  // 0 : Main, 1 : Scan, 2 : Select, 3 : Attack, 4 : Info
   bool on_page = false;
 };
 

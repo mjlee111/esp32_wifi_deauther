@@ -4,7 +4,8 @@
 
 #include <Arduino.h>
 
-class Buttons {
+class Buttons
+{
 public:
   Buttons(int sel_pin, int back_pin, int up_pin, int down_pin);
 

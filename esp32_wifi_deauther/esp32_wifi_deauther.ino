@@ -4,6 +4,12 @@
 
 Mainwindow window;
 
-void setup() { window.init(); }
+void setup()
+{
+  window.init();
+}
 
-void loop() { window.loop(); }
+void loop()
+{
+  window.loop();
+}

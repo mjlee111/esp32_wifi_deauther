@@ -1,14 +1,16 @@
 // display.cpp
 #include "display.h"
 
-Display::Display(int16_t width, int16_t height, int8_t reset_pin,
-                 uint8_t address, int16_t SDA_pin, int16_t SCL_pin)
-    : display(width, height, &Wire, reset_pin), screen_address(address),
-      SDA(SDA_pin), SCL(SCL_pin) {}
+Display::Display(int16_t width, int16_t height, int8_t reset_pin, uint8_t address, int16_t SDA_pin, int16_t SCL_pin)
+  : display(width, height, &Wire, reset_pin), screen_address(address), SDA(SDA_pin), SCL(SCL_pin)
+{
+}
 
-bool Display::startDisplay() {
+bool Display::startDisplay()
+{
   Wire.begin(SDA, SCL);
-  if (!display.begin(SSD1306_SWITCHCAPVCC, screen_address)) {
+  if (!display.begin(SSD1306_SWITCHCAPVCC, screen_address))
+  {
     for (;;)
       ;
   }
@@ -20,9 +22,10 @@ bool Display::startDisplay() {
   return true;
 }
 
-void Display::setDisplayText(std::string text, int16_t x, int16_t y,
-                             float size) {
-  if (text.length() > 21) {
+void Display::setDisplayText(std::string text, int16_t x, int16_t y, float size)
+{
+  if (text.length() > 21)
+  {
     text = text.substr(0, 21);
   }
   display.clearDisplay();
@@ -33,20 +36,22 @@ void Display::setDisplayText(std::string text, int16_t x, int16_t y,
   display.display();
 }
 
-void Display::setDisplayText(const char *text, int16_t x, int16_t y,
-                             float size) {
+void Display::setDisplayText(const char* text, int16_t x, int16_t y, float size)
+{
   std::string str = text;
   setDisplayText(str, x, y, size);
 }
 
-void Display::setDisplayText(int text, int16_t x, int16_t y, float size) {
+void Display::setDisplayText(int text, int16_t x, int16_t y, float size)
+{
   std::string str = std::to_string(text);
   setDisplayText(str, x, y, size);
 }
 
-void Display::appendDisplayText(std::string text, int16_t x, int16_t y,
-                                float size) {
-  if (text.length() > 21) {
+void Display::appendDisplayText(std::string text, int16_t x, int16_t y, float size)
+{
+  if (text.length() > 21)
+  {
     text = text.substr(0, 21);
   }
   display.setTextColor(WHITE);
@@ -56,13 +61,14 @@ void Display::appendDisplayText(std::string text, int16_t x, int16_t y,
   display.display();
 }
 
-void Display::appendDisplayText(const char *text, int16_t x, int16_t y,
-                                float size) {
+void Display::appendDisplayText(const char* text, int16_t x, int16_t y, float size)
+{
   std::string str = text;
   appendDisplayText(str, x, y, size);
 }
 
-void Display::appendDisplayText(int text, int16_t x, int16_t y, float size) {
+void Display::appendDisplayText(int text, int16_t x, int16_t y, float size)
+{
   std::string str = std::to_string(text);
   appendDisplayText(str, x, y, size);
 }
