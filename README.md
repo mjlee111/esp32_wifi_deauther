@@ -4,6 +4,11 @@
 
 `esp32_wifi_deauther` is a custom firmware for the `ESP32` board that enables WiFi scanning, deauthentication attacks, and includes support for a 0.96-inch OLED display. The firmware is designed to leverage the powerful capabilities of the ESP32, making it a versatile tool for network analysis and testing. Schematics & PCB data is provided for the test.
 
+<img src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white"/> <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Altium Designer-A5915F?&style=flat&logo=Altium Designer&logoColor=white"/> 
+<img src="https://img.shields.io/badge/ESP32-E7352C?&style=flat&logo=Espressif&logoColor=white"/> 
+
+
 ## Table of Contents
 - [About This Project](#about-this-project)
 - [Prerequisites & Setup](#prerequisites--setup)
@@ -13,26 +18,26 @@
 - [Contact](#contact)
 
 ## About This Project
-### Key Features
+### Key Features 🔑
 
 - **WiFi Scanning:** Scans for available WiFi networks in the surrounding area and displays network details, such as SSID, signal strength, and channel information.
 - **Deauthentication Attacks:** Provides the ability to perform deauthentication attacks on selected networks or clients, useful for network testing and penetration testing purposes.
 - **0.96-inch OLED Display Support:** Integrates a small OLED display for real-time data visualization, showing information about detected networks, attack status, and other metrics.
 - **Circuit Design:** Features a simple circuit design that connects the ESP32 board to the OLED display, allowing for easy assembly and portability.
 
-### Hardware Requirements
+### Hardware Requirements 💻
 
-- **ESP32 Board:** A low-cost, low-power microcontroller with built-in WiFi and Bluetooth capabilities.
+- **ESP32 Board:** A low-cost, low-power microcontroller with built-in WiFi and Bluetooth capabilities. (In this project, I used [ESP32 C3 Super Mini][esp32-super-mini] )
 - **0.96-inch OLED Display:** A small, monochrome display module that provides visual output of network data and actions.
 - **Additional Components:** Basic electronic components like resistors and wires for connecting the OLED display to the ESP32.
 
-### Use Cases
+### Use Cases 🪧
 
 - **Network Security Testing:** Test the robustness and security of your WiFi networks.
 - **Educational Purposes:** Learn about WiFi networks, how they operate, and common vulnerabilities.
 - **Network Analysis:** Quickly scan and display information about nearby WiFi networks for analysis or troubleshooting.
 
-### Disclaimer
+### Disclaimer ⚠️
 
 **This project is intended for educational and ethical purposes only. The use of deauthentication attacks may be illegal in your country or region. Please ensure that you have proper authorization before using this firmware to test any network.**
 
@@ -70,7 +75,7 @@ This project is licensed under the MIT License - see the [LICENSE][LICENSE] file
 ## Contact
 For any questions or feedback, please contact [menggu1234@naver.com][email].
 
-
+[esp32-super-mini]: https://www.sudo.is/docs/esphome/boards/esp32c3supermini/
 [gfx-link]: https://github.com/adafruit/Adafruit-GFX-Library.git
 [oled-link]: https://github.com/adafruit/Adafruit_SSD1306.git
 [espressif-link]: https://github.com/espressif/arduino-esp32.git
