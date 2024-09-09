@@ -38,7 +38,7 @@ private:
   Buttons* buttons_;
 
   int cursor_index = 0;
-  int page = 0;  // 0 : Main, 1 : Scan, 2 : Select, 3 : Attack, 4 : Info
+  int page = 0;  // 0 : Main, 1 : Select, 2 : Scan & Information, 3 : Attack, 4 : Info
   bool on_page = false;
 
   bool on_wifi_scan_info = false;
@@ -62,6 +62,7 @@ private:
 
   void setAttackPage();
 
+  void handleInfoPage(int button);
   void setInfoPage();
 };
 
