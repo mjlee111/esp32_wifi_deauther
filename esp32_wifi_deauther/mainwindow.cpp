@@ -17,10 +17,7 @@ Mainwindow::~Mainwindow()
 
 void Mainwindow::init()
 {
-  while (!display_->startDisplay())
-  {
-  }
-
+  display_->startDisplay();
   display_->setDisplayText("ESP32WifiDeautherV1.0", 0, 0, 1);
   display_->appendDisplayText("mjlee111", 0, 6, 2);
   display_->appendDisplayText("Starting ...", 0, 1, 1);
@@ -62,6 +59,7 @@ void Mainwindow::handleBack()
   if (page != 0)
   {
     setMainPage();
+    cursor_index = 0;
     display_->appendDisplayText("*", 0, cursor_index + 2, 1);
   }
   page = 0;
@@ -230,13 +228,39 @@ void Mainwindow::handleScanPageDown()
 
 void Mainwindow::handleScanPageSel()
 {
-}
-void Mainwindow::handleScanPageBack()
-{
-}
+  switch (cursor_index)
+  {
+    case 0:
+      display_->setDisplayText("Scanning ...", 0, 0, 1);
+      w_utils_->wifi_list = w_utils_->scanWifiList();
+      cursor_index = 0;
+      setScanPage();
+      display_->appendDisplayText("*", 0, 1, 1);
+      break;
 
-void Mainwindow::showWifiInfo(int num)
-{
+    default:
+      switch (on_wifi_scan_info)
+      {
+        case false:
+          display_->clearColArea(2, 7);
+          display_->appendDisplayText("Information", 5, 0, 1);
+          display_->appendDisplayText("BSSID :", 1, 2, 1);
+          display_->appendDisplayText(w_utils_->wifi_list.bssid[cursor_index], 0, 3, 1);
+          display_->appendDisplayText("Channel :", 1, 4, 1);
+          display_->appendDisplayText(w_utils_->wifi_list.channel[cursor_index], 0, 5, 1);
+          display_->appendDisplayText("Channel :", 1, 6, 1);
+          display_->appendDisplayText(w_utils_->wifi_list.channel[cursor_index], 0, 7, 1);
+          on_wifi_scan_info = true;
+          break;
+
+        default:
+          setScanPage();
+          display_->appendDisplayText("*", 0, 1, 1);
+          on_wifi_scan_info = false;
+          break;
+      }
+      break;
+  }
 }
 
 void Mainwindow::setSelectPage()
