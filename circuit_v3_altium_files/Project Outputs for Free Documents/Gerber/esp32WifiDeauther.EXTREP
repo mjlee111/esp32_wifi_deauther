@@ -1,30 +1,9 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: esp32WifiDeauther.GBR   2024-08-27  오전 12:44:17
+Gerber File Extension Report For: esp32WifiDeauther.GBR   2024-09-09  오후 12:32:52
 ------------------------------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------------------------
 Layer Extension     Layer Description                      
 ------------------------------------------------------------------------------------------
-.GTO                Top Overlay                             
-.GTP                Top Paste                               
-.GTS                Top Solder                              
-.GTL                Top Layer                               
-.GBL                Bottom Layer                            
-.GBS                Bottom Solder                           
-.GBP                Bottom Paste                            
-.GBO                Bottom Overlay                          
-.GM1                Mechanical 1                            
-.GM2                Top Assembly                            
-.GM3                Bottom Assembly                         
-.GM13               Mechanical 13                           
-.GM15               Mechanical 15                           
-.GKO                Keep-Out Layer                          
-.GPT                Top Pad Master                          
-.GPB                Bottom Pad Master                       
-.1                  Dielectric 1                            
-.GML                Multi-Layer                             
-.GD1                Drill Drawing                           
-.GG1                Drill Guide                             
-.GM                 Profile                                 
 ------------------------------------------------------------------------------------------

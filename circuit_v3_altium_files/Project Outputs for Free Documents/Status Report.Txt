@@ -1,32 +1,12 @@
-Output: Gerber Files
-Type  : Gerber
-From  : Variant [[No Variations]] of PCB Document [esp32WifiDeauther.PcbDoc]
-   Generated File[esp32WifiDeauther.GTO]
-   Generated File[esp32WifiDeauther.GTP]
-   Generated File[esp32WifiDeauther.GTS]
-   Generated File[esp32WifiDeauther.GTL]
-   Generated File[esp32WifiDeauther.GBL]
-   Generated File[esp32WifiDeauther.GBS]
-   Generated File[esp32WifiDeauther.GBP]
-   Generated File[esp32WifiDeauther.GBO]
-   Generated File[esp32WifiDeauther.GM1]
-   Generated File[esp32WifiDeauther.GM2]
-   Generated File[esp32WifiDeauther.GM3]
-   Generated File[esp32WifiDeauther.GM13]
-   Generated File[esp32WifiDeauther.GM15]
-   Generated File[esp32WifiDeauther.GKO]
-   Generated File[esp32WifiDeauther.GPT]
-   Generated File[esp32WifiDeauther.GPB]
-   Generated File[esp32WifiDeauther.1]
-   Generated File[esp32WifiDeauther.GML]
-   Generated File[esp32WifiDeauther.GD1]
-   Generated File[esp32WifiDeauther.GG1]
-   Generated File[esp32WifiDeauther.GM]
-   Generated File[esp32WifiDeauther.EXTREP]
-   Generated File[esp32WifiDeauther.REP]
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [esp32WifiDeauther.PcbDoc]
+   Generated File[esp32WifiDeauther.TXT]
+   Generated File[esp32WifiDeauther.LDP]
+   Generated File[esp32WifiDeauther.DRR]
 
 
-Files Generated   : 23
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 오전 12:44:19 On 2024-08-27
+Finished Output Generation At 오후 12:32:54 On 2024-09-09
