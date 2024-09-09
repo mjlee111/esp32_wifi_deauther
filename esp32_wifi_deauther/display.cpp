@@ -72,3 +72,39 @@ void Display::appendDisplayText(int text, int16_t x, int16_t y, float size)
   std::string str = std::to_string(text);
   appendDisplayText(str, x, y, size);
 }
+
+void Display::clearRow(int row)
+{
+  display.fillRect(0, row * 8, DISPLAY_WIDTH, 8, BLACK);
+  display.display();
+}
+
+void Display::clearCol(int col)
+{
+  display.fillRect(col * 6, 0, 6, DISPLAY_HEIGHT, BLACK);
+  display.display();
+}
+
+void Display::clearRowArea(int start_row, int end_row)
+{
+  if (start_row > end_row)
+  {
+    return;
+  }
+  for (int i = start_row; i <= end_row; i++)
+  {
+    clearRow(i);
+  }
+}
+
+void Display::clearColArea(int start_col, int end_col)
+{
+  if (start_col > end_col)
+  {
+    return;
+  }
+  for (int i = start_col; i <= end_col; i++)
+  {
+    clearCol(i);
+  }
+}
