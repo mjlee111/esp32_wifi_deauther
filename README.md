@@ -61,6 +61,7 @@ You can download `schematic` & `gerber` files in [here][circuit-download]
 <img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/PCB/pcb_2d.png" alt="pcb_2d">
 
 - 3D
+3D PCB model preview in [here][model-link]
 
 ## About This Project
 ### Key Features 🔑
@@ -101,5 +102,6 @@ For any questions or feedback, please contact [menggu1234@naver.com][email].
 [oled-link]: https://github.com/adafruit/Adafruit_SSD1306.git
 [espressif-link]: https://github.com/espressif/arduino-esp32.git
 [circuit-download]: https://drive.google.com/drive/folders/1x_XnUtAgamwl68b8rXIz4eCWMjAYlUFH?usp=sharing
+[model-link]: https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/PCB/3D_model_preview.md
 [LICENSE]: https://github.com/mjlee111/esp32_wifi_deauther/blob/master/LICENSE
 [email]: mailto:menggu1234@naver.com
