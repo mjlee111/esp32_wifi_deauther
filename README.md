@@ -2,6 +2,10 @@
 
 <img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/logo.png" alt="logo" width="200" height="200"><img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/v1.jpg" alt="v1" height="200">
 
+## ⚠️ Disclaimer ⚠️
+
+**This project is intended for educational and ethical purposes only. The use of deauthentication attacks may be illegal in your country or region. Please ensure that you have proper authorization before using this firmware to test any network.**
+
 ## Overview
 `esp32_wifi_deauther` is a custom firmware for the `ESP32` board that enables WiFi scanning, deauthentication attacks, and includes support for a 0.96-inch OLED display. The firmware is designed to leverage the powerful capabilities of the ESP32, making it a versatile tool for network analysis and testing. Schematics & PCB data is provided for the test.
 
@@ -85,11 +89,6 @@ You can download `schematic` & `gerber` files in [here][circuit-download]
 - **Network Security Testing:** Test the robustness and security of your WiFi networks.
 - **Educational Purposes:** Learn about WiFi networks, how they operate, and common vulnerabilities.
 - **Network Analysis:** Quickly scan and display information about nearby WiFi networks for analysis or troubleshooting.
-
-### Disclaimer ⚠️
-
-**This project is intended for educational and ethical purposes only. The use of deauthentication attacks may be illegal in your country or region. Please ensure that you have proper authorization before using this firmware to test any network.**
-
 
 ## Contributing
 Feel free to submit issues, feature requests, and pull requests to improve the package.
