@@ -17,7 +17,6 @@
 ## Table of Contents
 - [Prerequisites & Setup](#prerequisites--setup)
 - [Installation](#installation)
-- [How To Use](#how-to-use)
 - [ESP32 wifi deauther PCB V3.0](#esp32-wifi-deauther-pcb-v30)
 - [About This Project](#about-this-project)
 - [etc](#contributing)
@@ -43,18 +42,25 @@
 <img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/installation/esp32-board-manager-installation.png" alt="fig3">
 
 ## Installation
-1. Clone or Download raw .zip
+1. Clone the repo or Download raw .zip file
 2. open `Arduino IDE`
 3. open `esp_wifi_deauther.ino`
 4. upload to your device
 
-## How To Use
-
 ## ESP32 wifi deauther PCB V3.0
 ### Components
+| Components                                      | QTY | Price [KRW] | Total Price [KRW] |
+|-------------------------------------------------|-----|-------------|-------------------|
+| esp32 c3 super-mini                              | 1   | 8,000       | 8,000             |
+| micro tact switch (NW3-A06-B3)                   | 4   | 90          | 360               |
+| Chip LED 1608 RED (FC-DA1608HRK-620D)            | 1   | 40          | 40                |
+| SMD Multilayer Ceramic Capacitor, 0.1 µF (CEU4J2X7R1H104K125AE) | 4   | 470         | 1,880             |
+| Adafruit 0.96 inch OLED                          | 1   | 9,000       | 9,000             |
+Ordered from [Device-Mart][device-mart]
 
 ### Downloads
-You can download `schematic` & `gerber` files in [here][circuit-download]
+You can download `schematic` & `gerber` files in [here][circuit-download].
+You can order your own PCB on [JLCPCB][JLC]
 
 ### Schematic Preview
 <img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/PCB/schematic.png" alt="schematic">
@@ -104,6 +110,8 @@ For any questions or feedback, please contact [menggu1234@naver.com][email].
 [oled-link]: https://github.com/adafruit/Adafruit_SSD1306.git
 [espressif-link]: https://github.com/espressif/arduino-esp32.git
 [circuit-download]: https://drive.google.com/drive/folders/1x_XnUtAgamwl68b8rXIz4eCWMjAYlUFH?usp=sharing
+[device-mart]: https://www.devicemart.co.kr/main/index
+[JLC]: https://jlcpcb.com/
 [model-link]: https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/PCB/3D_model_preview.md
 [LICENSE]: https://github.com/mjlee111/esp32_wifi_deauther/blob/master/LICENSE
 [email]: mailto:menggu1234@naver.com
