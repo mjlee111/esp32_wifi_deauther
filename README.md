@@ -23,13 +23,12 @@
 
 ## Prerequisites & Setup
 ### Required Libraries
-- Adafruit GFX Library - [Adafruit Github][gfx-link]
 - Adafruit SSD 1306 Library - [Adafruit Github][oled-link]
 - espressif arduino core for esp32 - [Espressif Github][espressif-link] 
 
 ### Required Library Setup
 1. Open `Arduino IDE`
-2. Install OLED libraries: `Tools` -> `Manage Libraries` -> search `Adafruit GFX` & `Adafruit SSD1306` -> install
+2. Install OLED libraries: `Tools` -> `Manage Libraries` -> search `Adafruit SSD1306` -> install
 
 <img src="https://github.com/mjlee111/esp32_wifi_deauther/blob/master/docs/installation/adafruit-library-installation.png" alt="fig1">
 
@@ -106,7 +105,6 @@ This project is licensed under the MIT License - see the [LICENSE][LICENSE] file
 For any questions or feedback, please contact [menggu1234@naver.com][email].
 
 [esp32-super-mini]: https://www.sudo.is/docs/esphome/boards/esp32c3supermini/
-[gfx-link]: https://github.com/adafruit/Adafruit-GFX-Library.git
 [oled-link]: https://github.com/adafruit/Adafruit_SSD1306.git
 [espressif-link]: https://github.com/espressif/arduino-esp32.git
 [circuit-download]: https://drive.google.com/drive/folders/1x_XnUtAgamwl68b8rXIz4eCWMjAYlUFH?usp=sharing
